@@ -14,7 +14,7 @@ app.use(express.static('static'));
 
 (async () => {
   db = await open({
-    filename: path.joint(__dirname,'database.sqlite'),
+    filename: path.join(__dirname,'database.sqlite'),
     driver: sqlite3.Database,
   });
 })();
