@@ -80,7 +80,7 @@ async function fetchRestaurantsByFilters(isVeg, outDoorSeating, Luxury) {
   return { restaurants: response };
 }
 
-app.get('/restaurants/sorts-by-rating', async (req, res) => {
+app.get('/restaurants/sort-by-rating', async (req, res) => {
   try {
     let result = await sortRestaurantsByRating();
     if (result.restaurants.length === 0) {
